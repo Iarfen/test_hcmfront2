@@ -1,0 +1,8 @@
+<h1>Editar jornada de trabajo</h1>
+<form action="/workjourneys/{{ workjourney.id }}/edit/send/" method="post">
+{% csrf_token %}
+<div><span>Nombre: </span><input type="text" name="name" value="{{ workjourney.name }}" /></div>
+<div><span>Código: </span><input type="text" name="code" value="{{ workjourney.code }}" /></div>
+<div><span>Horario: </span><input type="text" name="schedule" value="{{ workjourney.schedule }}" /></div>
+<input type="submit" value="Editar" />
+</form>

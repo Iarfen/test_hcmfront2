@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'workjourneys/index.css' %}" />
+
+<h1 id="title">Jornadas de trabajo</h1>
+
+<a href='/workjourneys/create' class='link_button'>Crear jornada de trabajo</a>
+
+{% if workjourneys_list %}
+    <ul>
+    {% for workjourney in workjourneys_list %}
+        <li><a href="/workjourneys/{{ workjourney.id }}/" class="link">{{ workjourney.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay jornadas de trabajo disponibles.</p>
+{% endif %}

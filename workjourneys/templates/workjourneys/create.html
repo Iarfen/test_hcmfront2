@@ -1,0 +1,8 @@
+<h1>Crear jornada de trabajo</h1>
+<form action="/workjourneys/create/send/" method="post">
+{% csrf_token %}
+<div><span>Nombre: </span><input type="text" name="name" /></div>
+<div><span>Código: </span><input type="text" name="code" /></div>
+<div><span>Horario: </span><input type="text" name="schedule" /></div>
+<input type="submit" value="Crear" />
+</form>

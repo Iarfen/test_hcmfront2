@@ -1,0 +1,23 @@
+.link_button
+{
+    display: inline-block;
+    background-color: rgb(47, 173, 91);
+    color: #FFFFFF;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+}
+
+#title
+{
+    text-align: center;
+}

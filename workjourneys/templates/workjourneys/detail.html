@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'workjourneys/index.css' %}" />
+
+<h1>{{ workjourney.name }}</h1>
+<div><strong>Código: </strong>{{ workjourney.code }}</div>
+<div><strong>Horario: </strong>{{ workjourney.schedule }}</div>
+<div style="margin-top: 30px">
+<a href='/workjourneys' class='link_button'>Volver</a>
+<a href='/workjourneys/{{ workjourney.id }}/edit' class='link_button'>Editar</a>
+<a href='/workjourneys/{{ workjourney.id }}/delete' class='link_button'>Eliminar</a>
+</div>
